@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pablo Chamatrópulos — Podemos Bariloche | Convencional Constituyente 2026</title>
+<meta name="description" content="Pablo Chamatrópulos, presidente de Podemos Bariloche, primer candidato a Convencional Constituyente para la reforma de la Carta Orgánica de Bariloche. Elección del 1° de noviembre de 2026.">
+<meta property="og:title" content="Pablo Chamatrópulos — Podemos Bariloche">
+<meta property="og:description" content="El 1° de noviembre se decide el Bariloche que viene. Conocé la propuesta de Pablo Chamatrópulos para la reforma de la Carta Orgánica.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12201c;
+    --lake:#1f4c4a;
+    --lake-deep:#153634;
+    --stone:#eee8dc;
+    --paper:#f7f4ec;
+    --amber:#c98b2e;
+    --amber-deep:#a86f1e;
+    --moss:#516b52;
+    --line:rgba(18,32,28,0.14);
+    --white:#fffdf8;
+    --max:1180px;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;margin:0;line-height:1.08;letter-spacing:-0.01em;}
+  p{margin:0;}
+  section{position:relative;}
+  ::selection{background:var(--amber);color:var(--white);}
+  :focus-visible{outline:3px solid var(--amber);outline-offset:3px;}
+
+  /* ===== NAV ===== */
+  header.site-nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,244,236,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:var(--max);margin:0 auto;
+  }
+  .brand{font-family:var(--serif);font-weight:600;font-size:1.15rem;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px;}
+  .brand .mark{width:22px;height:22px;flex-shrink:0;}
+  nav.links{display:none;gap:28px;font-size:0.92rem;}
+  nav.links a{text-decoration:none;color:var(--ink);opacity:0.75;transition:opacity .15s;}
+  nav.links a:hover{opacity:1;}
+  .nav-cta{
+    display:none;
+    background:var(--amber);color:var(--white);
+    padding:10px 18px;border-radius:2px;text-decoration:none;
+    font-size:0.88rem;font-weight:600;white-space:nowrap;
+    transition:background .15s;
+  }
+  .nav-cta:hover{background:var(--amber-deep);}
+  .menu-btn{
+    background:none;border:1px solid var(--line);border-radius:2px;
+    width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  @media(min-width:900px){
+    nav.links{display:flex;}
+    .nav-cta{display:inline-block;}
+    .menu-btn{display:none;}
+  }
+  #mobile-menu{
+    display:none;flex-direction:column;gap:2px;
+    padding:8px 24px 20px;border-top:1px solid var(--line);
+  }
+  #mobile-menu.open{display:flex;}
+  #mobile-menu a{
+    padding:12px 4px;text-decoration:none;color:var(--ink);
+    border-bottom:1px solid var(--line);font-size:0.95rem;
+  }
+  #mobile-menu a:last-child{border-bottom:none;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;overflow:hidden;
+    background:var(--lake);color:var(--white);
+    padding:64px 0 0;
+  }
+  .hero-inner{
+    max-width:var(--max);margin:0 auto;padding:0 24px 60px;
+    display:grid;grid-template-columns:1fr;gap:40px;align-items:end;
+    position:relative;z-index:2;
+  }
+  .contour{position:absolute;inset:0;z-index:1;opacity:0.5;pointer-events:none;}
+  .eyebrow{
+    font-size:0.82rem;letter-spacing:0.02em;color:var(--amber);
+    font-weight:600;margin-bottom:18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex-shrink:0;}
+  .hero h1{
+    font-size:clamp(2.6rem,8vw,5.2rem);color:var(--white);
+    font-weight:700;
+  }
+  .hero .role{
+    font-family:var(--serif);font-style:italic;font-weight:400;
+    font-size:clamp(1.1rem,2.6vw,1.5rem);color:var(--stone);
+    margin-top:14px;max-width:640px;
+  }
+  .hero-quote{
+    margin-top:28px;font-size:1.05rem;color:var(--stone);
+    max-width:520px;border-left:2px solid var(--amber);padding-left:16px;
+  }
+  .hero-quote cite{display:block;font-style:normal;font-size:0.8rem;opacity:0.65;margin-top:8px;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 24px;border-radius:2px;text-decoration:none;
+    font-weight:600;font-size:0.94rem;transition:all .15s;
+    border:1px solid transparent;
+  }
+  .btn-primary{background:var(--amber);color:var(--white);}
+  .btn-primary:hover{background:var(--amber-deep);}
+  .btn-ghost{border-color:rgba(255,255,255,0.35);color:var(--white);}
+  .btn-ghost:hover{border-color:rgba(255,255,255,0.8);}
+  .btn-dark{border-color:var(--ink);color:var(--ink);}
+  .btn-dark:hover{background:var(--ink);color:var(--white);}
+
+  .hero-portrait{
+    position:relative;z-index:2;
+    border:1px solid rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.04);
+    aspect-ratio:4/5;max-width:340px;
+    overflow:hidden;margin:0 auto;
+    border-radius:2px;
+  }
+  .hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
+  @media(min-width:860px){
+    .hero-inner{grid-template-columns:1.3fr 0.7fr;padding-bottom:80px;}
+    .hero-portrait{margin:0;}
+  }
+
+  .stat-strip{
+    background:var(--lake-deep);border-top:1px solid rgba(255,255,255,0.1);
+    position:relative;z-index:2;
+  }
+  .stat-strip .wrap{
+    display:grid;grid-template-columns:repeat(1,1fr);
+    padding:26px 24px;gap:20px;
+  }
+  @media(min-width:560px){.stat-strip .wrap{grid-template-columns:repeat(3,1fr);}}
+  .stat b{display:block;font-family:var(--serif);font-size:1.7rem;color:var(--amber);font-weight:600;}
+  .stat span{font-size:0.78rem;color:rgba(255,255,255,0.7);}
+
+  /* ===== SECTION shared ===== */
+  .section{padding:88px 0;}
+  .section.tight{padding:64px 0;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .kicker{
+    font-size:0.8rem;color:var(--amber-deep);font-weight:600;
+    margin-bottom:12px;display:block;
+  }
+  .section-head h2{font-size:clamp(1.9rem,4.5vw,2.6rem);}
+  .section-head p{margin-top:16px;font-size:1.05rem;color:#3a453f;max-width:56ch;}
+  .divider{height:1px;background:var(--line);}
+
+  /* ===== PABLO ===== */
+  .pablo-grid{display:grid;grid-template-columns:1fr;gap:48px;}
+  @media(min-width:900px){.pablo-grid{grid-template-columns:1fr 1fr;align-items:start;}}
+  .bio p{margin-bottom:18px;font-size:1.05rem;color:#28322c;}
+  .bio p:last-child{margin-bottom:0;}
+  .pullquote{
+    background:var(--white);border:1px solid var(--line);border-left:3px solid var(--amber);
+    padding:32px;border-radius:2px;
+  }
+  .pullquote p{
+    font-family:var(--serif);font-size:1.4rem;font-style:italic;
+    line-height:1.35;color:var(--lake);
+  }
+  .pullquote cite{display:block;margin-top:16px;font-size:0.8rem;font-style:normal;color:#6b756f;}
+  .facts-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px;}
+  .facts-list li{
+    display:grid;grid-template-columns:22px 1fr;gap:12px;font-size:0.94rem;color:#3a453f;
+    padding-bottom:14px;border-bottom:1px solid var(--line);
+  }
+  .facts-list li:last-child{border-bottom:none;padding-bottom:0;}
+  .facts-list svg{width:18px;height:18px;margin-top:2px;color:var(--moss);}
+
+  /* ===== TIMELINE ===== */
+  .timeline{position:relative;margin-top:8px;}
+  .timeline::before{
+    content:'';position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:var(--line);
+  }
+  @media(min-width:760px){.timeline::before{left:50%;transform:translateX(-1px);}}
+  .t-item{position:relative;padding-left:36px;margin-bottom:40px;}
+  .t-item:last-child{margin-bottom:0;}
+  .t-item::before{
+    content:'';position:absolute;left:2px;top:6px;width:15px;height:15px;
+    border-radius:50%;background:var(--paper);border:2px solid var(--amber);
+  }
+  .t-year{font-family:var(--serif);font-weight:700;color:var(--amber-deep);font-size:1.1rem;display:block;margin-bottom:6px;}
+  .t-title{font-weight:600;font-size:1.05rem;margin-bottom:6px;}
+  .t-desc{font-size:0.93rem;color:#3a453f;max-width:52ch;}
+  @media(min-width:760px){
+    .t-item{
+      width:calc(50% - 30px);padding-left:0;padding-right:36px;text-align:right;
+    }
+    .t-item::before{left:auto;right:-8px;}
+    .t-item:nth-child(even){margin-left:calc(50% + 30px);padding-left:36px;padding-right:0;text-align:left;}
+    .t-item:nth-child(even)::before{left:-8px;right:auto;}
+  }
+
+  /* ===== CARTA ORGANICA ===== */
+  .carta{
+    background:var(--ink);color:var(--stone);
+  }
+  .carta .kicker{color:var(--amber);}
+  .carta .section-head h2{color:var(--white);}
+  .carta .section-head p{color:rgba(238,232,220,0.75);}
+  .carta-grid{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.1);border-left:1px solid rgba(255,255,255,0.1);}
+  .carta-box{background:var(--ink);padding:32px;flex:1 1 300px;border-right:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);}
+  .carta-box h3{color:var(--white);font-size:1.15rem;margin-bottom:12px;}
+  .carta-box p{color:rgba(238,232,220,0.78);font-size:0.95rem;}
+  .axes{margin-top:56px;}
+  .axes h3{color:var(--white);font-size:1.3rem;margin-bottom:24px;}
+  .axes-grid{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.1);border-left:1px solid rgba(255,255,255,0.1);}
+  .axis-item{background:var(--ink);padding:26px 22px;flex:1 1 240px;border-right:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);}
+  .axis-item .num{font-family:var(--serif);font-size:0.85rem;color:var(--amber);margin-bottom:14px;display:block;}
+  .axis-item h4{color:var(--white);font-size:1rem;margin-bottom:8px;}
+  .axis-item p{color:rgba(238,232,220,0.7);font-size:0.86rem;}
+  .carta-quote{
+    margin-top:56px;padding:32px 0 0;border-top:1px solid rgba(255,255,255,0.15);
+  }
+  .carta-quote p{
+    font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,3vw,1.8rem);
+    color:var(--white);max-width:760px;line-height:1.3;
+  }
+  .carta-quote cite{display:block;margin-top:16px;font-size:0.82rem;color:rgba(238,232,220,0.6);font-style:normal;}
+
+  .lista{margin-top:56px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.15);}
+  .lista h3{color:var(--white);font-size:1.15rem;margin-bottom:20px;font-weight:600;font-family:var(--sans);}
+  .candidatos-list{
+    list-style:none;margin:0;padding:0;
+    display:flex;flex-wrap:wrap;
+    border-top:1px solid rgba(255,255,255,0.1);border-left:1px solid rgba(255,255,255,0.1);
+  }
+  .candidatos-list li{
+    background:var(--ink);padding:14px 18px;display:flex;align-items:center;gap:12px;
+    font-size:0.92rem;color:rgba(238,232,220,0.88);
+    flex:1 1 280px;border-right:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .c-num{
+    font-family:var(--serif);color:var(--amber);font-size:0.85rem;
+    width:22px;flex-shrink:0;
+  }
+
+  /* ===== PROPUESTAS ===== */
+  .prop-grid{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+  .prop-card{background:var(--white);padding:30px;display:flex;flex-direction:column;gap:14px;flex:1 1 300px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .prop-icon{
+    width:42px;height:42px;border-radius:2px;background:var(--stone);
+    display:flex;align-items:center;justify-content:center;color:var(--lake);
+  }
+  .prop-icon svg{width:22px;height:22px;}
+  .prop-card h3{font-size:1.05rem;font-weight:600;font-family:var(--sans);}
+  .prop-card p{font-size:0.9rem;color:#3a453f;flex-grow:1;}
+  .tag{
+    display:inline-block;font-size:0.7rem;font-weight:600;letter-spacing:0.02em;
+    padding:5px 10px;border-radius:2px;width:fit-content;
+  }
+  .tag-actual{background:#e5efe4;color:var(--moss);}
+  .tag-reforma{background:#f5e6cc;color:var(--amber-deep);}
+  .tag-historica{background:#eee;color:#666;}
+  .prop-link{
+    font-size:0.85rem;font-weight:600;color:var(--lake);text-decoration:none;
+    display:inline-flex;align-items:center;gap:5px;margin-top:4px;
+  }
+  .prop-link svg{width:14px;height:14px;}
+
+  /* ===== BARILOCHE ===== */
+  .bariloche{background:var(--stone);}
+  .bar-grid{display:grid;grid-template-columns:1fr;gap:40px;}
+  @media(min-width:900px){.bar-grid{grid-template-columns:1fr 1fr;align-items:center;}}
+  .barrio-list{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .barrio-list li{background:var(--paper);padding:18px 20px;display:flex;justify-content:space-between;gap:12px;align-items:baseline;}
+  .barrio-list .bname{font-weight:600;font-size:0.96rem;}
+  .barrio-list .bnote{font-size:0.82rem;color:#5a655e;text-align:right;}
+  .map-frame{
+    border:1px solid var(--line);background:var(--white);
+    aspect-ratio:1/1;position:relative;overflow:hidden;
+  }
+  .map-frame svg{width:100%;height:100%;}
+
+  /* ===== VOZ ===== */
+  .voz-list{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:8px;}
+  .voz-item{background:var(--white);padding:30px;flex:1 1 420px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .voz-item p{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--lake);line-height:1.4;}
+  .voz-meta{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;}
+  .voz-meta cite{font-style:normal;font-size:0.8rem;color:#6b756f;}
+  .voz-meta a{font-size:0.8rem;font-weight:600;color:var(--amber-deep);text-decoration:none;}
+
+  /* ===== ACTUALIDAD ===== */
+  .news-grid{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+  .news-card{background:var(--white);padding:26px;display:flex;flex-direction:column;gap:10px;flex:1 1 300px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .news-date{font-size:0.78rem;color:var(--amber-deep);font-weight:600;}
+  .news-card h3{font-size:1rem;font-weight:600;font-family:var(--sans);}
+  .news-card p{font-size:0.88rem;color:#3a453f;}
+  .news-card a{font-size:0.82rem;color:var(--lake);font-weight:600;text-decoration:none;margin-top:auto;}
+  .cms-note{
+    margin-top:28px;padding:18px 22px;background:var(--stone);border-left:3px solid var(--amber);
+    font-size:0.86rem;color:#3a453f;
+  }
+
+  /* ===== PARTICIPA ===== */
+  .participa{background:var(--lake);color:var(--white);}
+  .participa .kicker{color:var(--amber);}
+  .participa .section-head h2{color:var(--white);}
+  .participa .section-head p{color:rgba(238,232,220,0.75);}
+  .part-grid{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.12);border-left:1px solid rgba(255,255,255,0.12);}
+  .part-card{background:var(--lake);padding:30px;flex:1 1 260px;border-right:1px solid rgba(255,255,255,0.12);border-bottom:1px solid rgba(255,255,255,0.12);}
+  .part-card h3{color:var(--white);font-size:1.05rem;margin-bottom:10px;}
+  .part-card p{color:rgba(238,232,220,0.75);font-size:0.9rem;margin-bottom:16px;}
+  .placeholder-badge{
+    display:inline-block;font-size:0.68rem;font-weight:600;color:var(--amber);
+    border:1px solid rgba(201,139,46,0.5);padding:3px 8px;border-radius:2px;margin-bottom:10px;
+  }
+  .contact-form{margin-top:56px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);padding:32px;border-radius:2px;}
+  .contact-form h3{color:var(--white);font-size:1.15rem;margin-bottom:6px;}
+  .contact-form>p{color:rgba(238,232,220,0.7);font-size:0.88rem;margin-bottom:24px;}
+  .form-row{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:16px;}
+  @media(min-width:640px){.form-row.two{grid-template-columns:1fr 1fr;}}
+  .form-row label{display:block;font-size:0.8rem;color:rgba(238,232,220,0.8);margin-bottom:6px;}
+  .form-row input,.form-row select,.form-row textarea{
+    width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.25);
+    color:var(--white);padding:12px 14px;border-radius:2px;font-family:var(--sans);font-size:0.92rem;
+  }
+  .form-row input::placeholder,.form-row textarea::placeholder{color:rgba(255,255,255,0.4);}
+  .form-row textarea{min-height:100px;resize:vertical;}
+  .form-note{font-size:0.76rem;color:rgba(238,232,220,0.55);margin-top:14px;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--ink);color:rgba(238,232,220,0.7);padding:56px 0 28px;}
+  .footer-grid{display:grid;grid-template-columns:1fr;gap:36px;margin-bottom:40px;}
+  @media(min-width:800px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr;}}
+  .footer-brand{font-family:var(--serif);color:var(--white);font-size:1.2rem;margin-bottom:10px;}
+  .footer-grid h4{color:var(--white);font-size:0.82rem;letter-spacing:0.02em;margin-bottom:14px;font-family:var(--sans);font-weight:600;}
+  .footer-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+  .footer-grid a{color:rgba(238,232,220,0.7);text-decoration:none;font-size:0.9rem;}
+  .footer-grid a:hover{color:var(--amber);}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:0.78rem;
+  }
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+  [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease;}
+  [data-reveal].is-visible{opacity:1;transform:translateY(0);}
+  @media(prefers-reduced-motion:reduce){
+    [data-reveal]{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 24 24" fill="none"><path d="M2 18 L8 9 L12 14 L16 6 L22 18 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      Chamatrópulos
+    </a>
+    <nav class="links">
+      <a href="#pablo">Pablo</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#carta-organica">Carta Orgánica</a>
+      <a href="#propuestas">Propuestas</a>
+      <a href="#bariloche">Bariloche</a>
+      <a href="#voz">La palabra de Pablo</a>
+      <a href="#actualidad">Actualidad</a>
+    </nav>
+    <a href="#participa" class="nav-cta">Sumate al 1N</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <a href="#pablo">Pablo</a>
+    <a href="#trayectoria">Trayectoria</a>
+    <a href="#carta-organica">Carta Orgánica</a>
+    <a href="#propuestas">Propuestas</a>
+    <a href="#bariloche">Bariloche</a>
+    <a href="#voz">La palabra de Pablo</a>
+    <a href="#actualidad">Actualidad</a>
+    <a href="#participa">Sumate al 1N</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <svg class="contour" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20 420 C 150 380, 250 250, 380 260 C 500 268, 560 380, 700 340 C 850 296, 900 120, 1080 140 C 1160 150, 1190 200, 1220 190" stroke="rgba(255,255,255,0.14)" stroke-width="1.5" fill="none"/>
+    <path d="M-20 460 C 160 430, 260 320, 400 330 C 520 338, 570 420, 720 390 C 860 362, 910 200, 1080 220 C 1160 230, 1190 270, 1220 262" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" fill="none"/>
+    <path d="M-20 380 C 140 330, 240 180, 370 190 C 490 198, 555 330, 690 280 C 840 224, 895 40, 1080 60 C 1160 70, 1190 130, 1220 118" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="none"/>
+    <path d="M-20 500 L -20 380 C 140 330, 240 180, 370 190 C 490 198, 555 330, 690 280 C 840 224, 895 40, 1080 60 C 1160 70, 1190 130, 1220 118 L 1220 500 Z" fill="rgba(255,255,255,0.03)"/>
+  </svg>
+  <div class="hero-inner">
+    <div data-reveal>
+      <span class="eyebrow"><span class="dot"></span>Presidente de Podemos Bariloche · Presidente de CODEC</span>
+      <h1>Pablo Chamatrópulos</h1>
+      <p class="role">Primer candidato a Convencional Constituyente por Podemos&nbsp;Bariloche para la reforma de la Carta Orgánica Municipal.</p>
+      <blockquote class="hero-quote">
+        <p>&ldquo;El 1° de noviembre votamos el Bariloche de los próximos 20 años. No discutimos una alternativa de poder: discutimos la Constitución de Bariloche.&rdquo;</p>
+        <cite>— Pablo Chamatrópulos, presentación de listas, septiembre de 2026</cite>
+      </blockquote>
+      <div class="hero-ctas">
+        <a href="#carta-organica" class="btn btn-primary">Conocé la propuesta para la Carta Orgánica</a>
+        <a href="#participa" class="btn btn-ghost">Sumate</a>
+      </div>
+    </div>
+    <div class="hero-portrait" data-reveal>
+      <img src="data:image/jpeg;base64,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" alt="Pablo Chamatrópulos, presidente de Podemos Bariloche" loading="eager">
+    </div>
+  </div>
+  <div class="stat-strip">
+    <div class="wrap">
+      <div class="stat"><b>1/11</b><span>Elección de Convencionales Constituyentes 2026</span></div>
+      <div class="stat"><b>3ª</b><span>Fuerza vecinal más votada en 2019</span></div>
+      <div class="stat"><b>150.000</b><span>Vecinos de Bariloche</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PABLO ============ -->
+<section id="pablo" class="section">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Quién es</span>
+      <h2>Pablo Chamatrópulos</h2>
+      <p>Un sociólogo formado en escuela pública que volvió a Bariloche para gestionar, y que después de la gestión eligió construir un partido vecinal desde cero.</p>
+    </div>
+    <div class="pablo-grid">
+      <div class="bio" data-reveal>
+        <p>Pablo es hijo de un guardaparque del Parque Nacional Nahuel Huapi. Hizo la primaria en la Escuela 187 de El Mallín y la secundaria en el ENET N°1 Jorge Newbery del Ñireco, antes de irse a estudiar Sociología a la Universidad de Buenos Aires.</p>
+        <p>De joven trabajó como guía turístico y como mozo, y más adelante en Defensa del Consumidor. Volvió a Bariloche con su familia y fue Jefe de Gabinete de la Municipalidad, una etapa que le sirvió para conocer en profundidad el funcionamiento del Estado local, sus factores de poder y lo que funciona y lo que no. Al dejar la función pública fundó Podemos Bariloche, un espacio vecinalista sin estructura partidaria nacional.</p>
+        <p>Es padre de cuatro hijos —Pablo Lucas, Abril, Nicolás y Macarena— y viudo de Liliana Rojas, a quien recuerda públicamente en cada presentación.</p>
+        <p>Hoy preside Podemos Bariloche y el CODEC (Centro de Orientación, Defensa y Educación del Consumidor), desde donde encabezó los reclamos por la conexión de gas natural y por la presión del agua en distintos barrios de la ciudad.</p>
+      </div>
+      <div data-reveal>
+        <div class="pullquote">
+          <p>&ldquo;Mi vocación tiene que ver con el servicio.&rdquo;</p>
+          <cite>Pablo Chamatrópulos — BarilocheOpina, 2023</cite>
+        </div>
+        <ul class="facts-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg><span>Licenciado en Sociología, Universidad de Buenos Aires (UBA).</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21V7l9-4 9 4v14"/><path d="M9 21v-6h6v6"/></svg><span>Ex Jefe de Gabinete de la Municipalidad de San Carlos de Bariloche.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg><span>Fundador y presidente de Podemos Bariloche, partido vecinal.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 21V10l8-6 8 6v11"/><path d="M4 21h16"/></svg><span>Concejal de Bariloche por Podemos Bariloche, período 2019–2023.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/></svg><span>Presidente del CODEC, Centro de Orientación, Defensa y Educación del Consumidor.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ============ TRAYECTORIA ============ -->
+<section id="trayectoria" class="section">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Trayectoria</span>
+      <h2>De la escuela pública al Concejo Deliberante</h2>
+      <p>Casi dos décadas de trabajo en Bariloche, dentro y fuera de la gestión municipal.</p>
+    </div>
+    <div class="timeline">
+      <div class="t-item" data-reveal>
+        <span class="t-year">Formación</span>
+        <div class="t-title">Escuela pública y Sociología en la UBA</div>
+        <p class="t-desc">Primaria en la Escuela 187 de El Mallín, secundaria en el ENET N°1 Jorge Newbery del Ñireco, y Licenciatura en Sociología en la Universidad de Buenos Aires.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">Regreso a Bariloche</span>
+        <div class="t-title">Jefe de Gabinete de la Municipalidad</div>
+        <p class="t-desc">Vuelve a la ciudad con su familia y asume como Jefe de Gabinete, una función que le permitió conocer en profundidad el funcionamiento del Estado municipal.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">Fundación</span>
+        <div class="t-title">Nace Podemos Bariloche</div>
+        <p class="t-desc">Al dejar la función pública, forma un espacio político vecinal sin estructura partidaria nacional: Podemos Bariloche.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">2019</span>
+        <div class="t-title">Tercera fuerza vecinal en su primera elección</div>
+        <p class="t-desc">Doble candidatura a intendente y concejal. Obtiene 5.037 votos (7,46%) para intendente y 4.655 (6,86%) para concejal, e ingresa al Concejo Deliberante.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">2019–2023</span>
+        <div class="t-title">Banca en el Concejo Deliberante</div>
+        <p class="t-desc">Bloque unipersonal. Intensifica la fiscalización de la gestión municipal en temas como turismo, transporte y uso de fondos públicos.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">2023</span>
+        <div class="t-title">Candidato a intendente por Sumamos por Bariloche</div>
+        <p class="t-desc">Encabeza la alianza de Podemos, Compromiso Cívico y Social y el partido Sur. Obtiene 2.773 votos (4,19%) en una elección con 12 candidaturas a intendente.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">Actualidad</span>
+        <div class="t-title">Presidente del CODEC</div>
+        <p class="t-desc">Encabeza los reclamos por la falta histórica de conexión de gas natural y por la presión de agua potable en barrios como el Alto de Bariloche.</p>
+      </div>
+      <div class="t-item" data-reveal>
+        <span class="t-year">2026</span>
+        <div class="t-title">Primer candidato a Convencional Constituyente</div>
+        <p class="t-desc">Podemos Bariloche compite sin alianzas en la elección del 1° de noviembre para reformar la Carta Orgánica Municipal de la ciudad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTA ORGANICA ============ -->
+<section id="carta-organica" class="section carta">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">El tema central de 2026</span>
+      <h2>La reforma de la Carta Orgánica</h2>
+      <p>El 1° de noviembre, Bariloche elige a los Convencionales Constituyentes que van a reescribir su norma institucional básica. Podemos Bariloche compite en solitario, sin alianzas partidarias.</p>
+    </div>
+    <div class="carta-grid" data-reveal>
+      <div class="carta-box">
+        <h3>¿Por qué se reforma?</h3>
+        <p>La Carta Orgánica es la norma que organiza la vida institucional y cívica de Bariloche. Por eso Podemos Bariloche pide que la discusión se mantenga al margen de las disputas electorales de otros niveles de gobierno, y se aborde como una definición de fondo para la ciudad.</p>
+      </div>
+      <div class="carta-box">
+        <h3>¿Qué está en juego?</h3>
+        <p>Cómo se garantizan los servicios esenciales, cómo se controla al gobierno de turno, cómo se organiza la seguridad local y qué reglas de participación tienen los vecinos. &ldquo;No podemos hablar de desarrollo mientras haya vecinos que todavía no tienen garantizado el acceso a los servicios esenciales&rdquo;, sostiene Pablo.</p>
+      </div>
+      <div class="carta-box">
+        <h3>¿Qué propone Pablo?</h3>
+        <p>Que la nueva Carta Orgánica garantice el acceso a agua, luz y gas, cree una fuerza de seguridad local, y establezca mecanismos de participación ciudadana simples, seguros, rápidos y transparentes, con organismos de control fortalecidos.</p>
+      </div>
+    </div>
+
+    <div class="axes" data-reveal>
+      <h3>Los cuatro ejes de la propuesta de Podemos Bariloche</h3>
+      <div class="axes-grid">
+        <div class="axis-item">
+          <span class="num">Eje 01</span>
+          <h4>Servicios públicos esenciales</h4>
+          <p>Garantizar el acceso a agua, luz y gas como condición básica para el desarrollo de la ciudad.</p>
+        </div>
+        <div class="axis-item">
+          <span class="num">Eje 02</span>
+          <h4>Participación ciudadana y transparencia</h4>
+          <p>Mecanismos de participación "simples, seguros, rápidos y transparentes", y organismos de control fortalecidos para realizar auditorías efectivas sobre el gobierno de turno.</p>
+        </div>
+        <div class="axis-item">
+          <span class="num">Eje 03</span>
+          <h4>Seguridad</h4>
+          <p>Creación de una Policía Local propia, con personal capacitado para intervenir en problemáticas vinculadas al delito local, en coordinación con la Policía de Río Negro y con énfasis en la prevención y la disuasión.</p>
+        </div>
+        <div class="axis-item">
+          <span class="num">Eje 04</span>
+          <h4>Movilidad urbana</h4>
+          <p>Planificación integral que contempla la descentralización, mejoras en el transporte público, calles asfaltadas y mayor conexión entre los barrios.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carta-quote" data-reveal>
+      <p>&ldquo;Bariloche necesita dar un salto de calidad que la convierta en una ciudad moderna y desarrollada.&rdquo;</p>
+      <cite>— Pablo Chamatrópulos, presidente de Podemos Bariloche, septiembre de 2026</cite>
+    </div>
+
+    <div class="lista" data-reveal>
+      <h3>La lista de Podemos Bariloche para el 1° de noviembre</h3>
+      <ol class="candidatos-list">
+        <li><span class="c-num">1</span>Pablo Chamatrópulos</li>
+        <li><span class="c-num">2</span>Rocío Macarena Arriagada</li>
+        <li><span class="c-num">3</span>Alberto Andrés López</li>
+        <li><span class="c-num">4</span>Juliana Andrea Leiva</li>
+        <li><span class="c-num">5</span>Daniel Mario Garillo</li>
+        <li><span class="c-num">6</span>Selena Birnmann</li>
+        <li><span class="c-num">7</span>Abel Nazario Almendra</li>
+        <li><span class="c-num">8</span>Stella Maris Gigena</li>
+        <li><span class="c-num">9</span>Carlos Raúl Fredes</li>
+        <li><span class="c-num">10</span>Rosa Nélida Huenchupan</li>
+        <li><span class="c-num">11</span>Matías Joaquín Cuassolo</li>
+        <li><span class="c-num">12</span>Paula Anabel Riquelme</li>
+        <li><span class="c-num">13</span>Eduardo Samuel Berli</li>
+        <li><span class="c-num">14</span>Graciela Mabel Donda</li>
+        <li><span class="c-num">15</span>Miguel Ángel Martínez</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPUESTAS ============ -->
+<section id="propuestas" class="section">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Propuestas</span>
+      <h2>Ideas para cada problema de Bariloche</h2>
+      <p>Reconstruidas a partir de su gestión en el Concejo, su trabajo actual en el CODEC y la plataforma de Podemos Bariloche para la Carta Orgánica.</p>
+    </div>
+    <div class="prop-grid" data-reveal>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/></svg></div>
+        <span class="tag tag-actual">Vigente — CODEC</span>
+        <h3>Agua, luz y gas garantizados</h3>
+        <p>Desde el CODEC impulsó el reclamo por la falta histórica de conexión de gas natural en Bariloche y cuestionó a la empresa de agua por la baja presión en barrios postergados como el Alto. Para la Carta Orgánica, propone que el acceso a estos servicios sea una condición básica reconocida.</p>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5.2 3.4 9 8 10 4.6-1 8-4.8 8-10V6l-8-4Z"/></svg></div>
+        <span class="tag tag-reforma">Carta Orgánica 2026</span>
+        <h3>Policía Local propia</h3>
+        <p>Uno de los cuatro ejes de la propuesta de Podemos Bariloche: crear una Policía Local con personal capacitado para intervenir en problemáticas de delito local, coordinada con la Policía de Río Negro y enfocada en la prevención y la disuasión.</p>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <span class="tag tag-reforma">Carta Orgánica 2026</span>
+        <h3>Transparencia y control externo</h3>
+        <p>Un Tribunal de Contralor como órgano externo elegido por concurso, y mecanismos de participación ciudadana simples, seguros, rápidos y transparentes, con audiencias que realmente incidan en las decisiones.</p>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="10" width="14" height="7" rx="1"/><path d="M17 12h2.5L22 15v2h-5"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></div>
+        <span class="tag tag-historica">Histórica y vigente</span>
+        <h3>Transporte urbano y tarifa residente</h3>
+        <p>Como concejal impulsó diferenciar la tarifa del boleto entre residentes y turistas, integración tarifaria y carriles exclusivos. Para la reforma, propone un plan de movilidad con pavimentación y mejor conectividad entre barrios.</p>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <span class="tag tag-historica">Histórica</span>
+        <h3>Urgencia habitacional</h3>
+        <p>Propuso declarar la "urgencia habitacional" para agilizar trámites de obra, y la creación del banco municipal de tierras previsto en la Carta Orgánica, para facilitar el acceso al suelo.</p>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V10l3-6h10l3 6v11"/><path d="M4 14h16"/></svg></div>
+        <span class="tag tag-historica">Histórica</span>
+        <h3>Cierre y remediación del vertedero</h3>
+        <p>Planteó cerrar y remediar el vertedero municipal actual, avanzar hacia un vertedero regional y usar tecnología para separar residuos y aprovechar el material orgánico, en lugar de la quema a cielo abierto.</p>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10Z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
+        <span class="tag tag-reforma">Carta Orgánica 2026</span>
+        <h3>Descentralización de la ciudad</h3>
+        <p>Un plan de movilidad urbana orientado a la descentralización integral de Bariloche, para que los barrios más alejados del centro tengan mejores servicios y conectividad.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BARILOCHE ============ -->
+<section id="bariloche" class="section bariloche">
+  <div class="wrap">
+    <div class="bar-grid">
+      <div data-reveal>
+        <span class="kicker">Bariloche</span>
+        <h2 style="margin-bottom:16px;">Una ciudad recorrida barrio por barrio</h2>
+        <p style="color:#3a453f;font-size:1.02rem;margin-bottom:28px;max-width:52ch;">Bariloche tiene alrededor de 150.000 vecinos y recibe cerca de 800.000 visitantes al año. Pablo construyó su recorrido político casa por casa, con especial presencia en los barrios donde los servicios básicos llegaron tarde o no llegaron.</p>
+        <ul class="barrio-list">
+          <li><span class="bname">Alto de Bariloche</span><span class="bnote">Zona históricamente postergada en el acceso al agua</span></li>
+          <li><span class="bname">Nahuel Hue</span><span class="bnote">Base de campaña y fuerte respaldo vecinal</span></li>
+          <li><span class="bname">El Mallín</span><span class="bnote">Donde Pablo hizo la escuela primaria</span></li>
+          <li><span class="bname">Ñireco</span><span class="bnote">Sede del ENET N°1 Jorge Newbery, su secundaria</span></li>
+          <li><span class="bname">Villa Los Coihues</span><span class="bnote">Uno de los barrios donde vota y hace campaña</span></li>
+        </ul>
+      </div>
+      <div class="map-frame" data-reveal aria-hidden="true">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="400" fill="#f7f4ec"/>
+          <path d="M0 260 C 60 240, 90 180, 150 190 C 210 200, 230 260, 300 230 C 350 208, 370 150, 400 160 L 400 400 L 0 400 Z" fill="#1f4c4a" opacity="0.9"/>
+          <path d="M0 300 C 70 280, 100 320, 170 300 C 230 284, 260 340, 330 310 C 370 294, 390 320, 400 316 L 400 400 L 0 400 Z" fill="#153634"/>
+          <path d="M0 260 C 60 240, 90 180, 150 190 C 210 200, 230 260, 300 230 C 350 208, 370 150, 400 160" stroke="#c98b2e" stroke-width="1.4" fill="none" opacity="0.7"/>
+          <circle cx="150" cy="192" r="4" fill="#c98b2e"/>
+          <circle cx="230" cy="222" r="4" fill="#c98b2e"/>
+          <circle cx="300" cy="230" r="4" fill="#c98b2e"/>
+          <text x="20" y="40" fill="#12201c" font-family="Fraunces, serif" font-size="15" opacity="0.55">Lago Nahuel Huapi</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VOZ ============ -->
+<section id="voz" class="section">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">La palabra de Pablo</span>
+      <h2>Declaraciones y cartas abiertas</h2>
+      <p>Lo que Pablo dijo, escrito o dicho, con la fuente original de cada declaración.</p>
+    </div>
+    <div class="voz-list" data-reveal>
+      <div class="voz-item">
+        <p>&ldquo;No tener gas es dormir todas las noches con un ojo abierto por miedo. Es hora de avanzar.&rdquo;</p>
+        <div class="voz-meta"><cite>X (@Chamatropulos)</cite><a href="https://x.com/Chamatropulos" target="_blank" rel="noopener">Ver publicación ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;No naturalicemos la agresión como forma de hacer política, exijamos más porque nos merecemos más.&rdquo;</p>
+        <div class="voz-meta"><cite>Carta abierta "No nos acostumbremos" — BarilocheOpina, marzo 2026</cite><a href="https://www.barilocheopina.com/noticias/2026/03/04/85186-carta-abierta-no-nos-acostumbremos" target="_blank" rel="noopener">Leer completa ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;Esta elección se trata de ideas. Es una elección de barilochenses para barilochenses.&rdquo;</p>
+        <div class="voz-meta"><cite>Presentación de listas — BarilocheOpina, septiembre 2026</cite><a href="https://www.barilocheopina.com/noticias/2026/09/07/93914-podemos-bariloche-presento-su-lista-para-reformar-la-carta-organica-municipal" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;No importa qué vas a votar el año que viene ni cuál es tu identidad política nacional: hoy discutimos el Bariloche de los próximos 20 años.&rdquo;</p>
+        <div class="voz-meta"><cite>Bariloche2000, agosto 2026</cite><a href="https://www.bariloche2000.com/politica/elecciones-constituyentes-chamatropulos-participara-con-podemos-bariloche-20260813-0021.html" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;Mi vocación tiene que ver con el servicio. Fui guía turístico desde muy chico, luego mozo, y trabajé en Defensa del Consumidor.&rdquo;</p>
+        <div class="voz-meta"><cite>BarilocheOpina, julio 2023</cite><a href="https://www.barilocheopina.com/noticias/2023/07/25/67865-pablo-chamatropulos-mi-vocacion-tiene-que-ver-con-el-servicio" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;Responsabilizar a los barilochenses por la baja presión sin responder por inversiones ni por la falta de suministro es injustificable y vulnera derechos básicos.&rdquo;</p>
+        <div class="voz-meta"><cite>Sobre el reclamo a Aguas Rionegrinas — ANBariloche, enero 2026</cite><a href="https://www.anbariloche.com.ar/noticias/2026/01/26/102058-el-codec-cuestiono-a-aguas-rionegrinas-por-responsabilizar-a-los-vecinos-tras-la-baja-presion-del-agua" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;Esta Carta Orgánica es la que va a regir la ciudad por los próximos 20 años. Por eso es fundamental resolver cuestiones del pasado para poner el foco en el futuro.&rdquo;</p>
+        <div class="voz-meta"><cite>El Monterizo, septiembre 2026</cite><a href="https://elmonterizo.com/podemos-bariloche-va-solo-a-la-reforma-de-la-carta-organica-quien-encabeza-la-lista" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;No queremos confundir al vecino: esta elección se trata de ideas. No importa a quién votes el año que viene, ni las alianzas partidarias ni las ideologías. Importan las ideas que nos lleven a construir una ciudad mejor.&rdquo;</p>
+        <div class="voz-meta"><cite>Podemos Bariloche — El Monterizo, septiembre 2026</cite><a href="https://elmonterizo.com/podemos-bariloche-va-solo-a-la-reforma-de-la-carta-organica-quien-encabeza-la-lista" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+      <div class="voz-item">
+        <p>&ldquo;Bariloche necesita dar el salto de calidad que se merece. Es hora de avanzar.&rdquo;</p>
+        <div class="voz-meta"><cite>Podemos Bariloche — El Monterizo, septiembre 2026</cite><a href="https://elmonterizo.com/podemos-bariloche-va-solo-a-la-reforma-de-la-carta-organica-quien-encabeza-la-lista" target="_blank" rel="noopener">Leer nota ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTUALIDAD ============ -->
+<section id="actualidad" class="section tight">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Actualidad</span>
+      <h2>Novedades recientes</h2>
+      <p>Últimas actividades verificadas. Esta sección está preparada para incorporar nuevas notas, recorridas y entrevistas a medida que ocurran.</p>
+    </div>
+    <div class="news-grid" data-reveal>
+      <div class="news-card">
+        <span class="news-date">4 de septiembre de 2026</span>
+        <h3>Podemos Bariloche presenta su lista de convencionales constituyentes</h3>
+        <p>Pablo encabeza la nómina de 15 titulares y 12 suplentes que competirá sin alianzas en la elección del 1° de noviembre.</p>
+        <a href="https://www.anbariloche.com.ar/noticias/2026/09/04/116105-pablo-chamatropulos-sera-el-primer-candidato-en-la-lista-de-podemos-para-las-convencionales-constituyentes" target="_blank" rel="noopener">Leer en ANBariloche ↗</a>
+      </div>
+      <div class="news-card">
+        <span class="news-date">26 de enero de 2026</span>
+        <h3>El CODEC cuestiona a Aguas Rionegrinas por la baja presión</h3>
+        <p>Pablo reclamó inversiones estructurales para garantizar el servicio en toda la ciudad, especialmente en el Alto de Bariloche.</p>
+        <a href="https://www.anbariloche.com.ar/noticias/2026/01/26/102058-el-codec-cuestiono-a-aguas-rionegrinas-por-responsabilizar-a-los-vecinos-tras-la-baja-presion-del-agua" target="_blank" rel="noopener">Leer en ANBariloche ↗</a>
+      </div>
+      <div class="news-card">
+        <span class="news-date">Enero de 2026</span>
+        <h3>Bariloche habilita miles de nuevas conexiones de gas natural</h3>
+        <p>Tras años de reclamos del CODEC, se resuelve la falta de factibilidad que afectaba a miles de familias en la región.</p>
+        <a href="https://barilocheredes.com.ar/bariloche-habilita-nuevas-conexiones-de-gas/" target="_blank" rel="noopener">Leer nota ↗</a>
+      </div>
+    </div>
+    <p class="cms-note">Esta sección está estructurada para actualizarse fácilmente con nuevas declaraciones, recorridas y novedades electorales a medida que se produzcan, sin alterar el resto del sitio.</p>
+  </div>
+</section>
+
+<!-- ============ PARTICIPA ============ -->
+<section id="participa" class="section participa">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Participá</span>
+      <h2>Sumate a la discusión del Bariloche que viene</h2>
+      <p>El 1° de noviembre se eligen los Convencionales Constituyentes que van a reformar la Carta Orgánica. Podés informarte, sumarte o dejar tu propuesta.</p>
+    </div>
+    <div class="part-grid" data-reveal>
+      <div class="part-card">
+        <h3>Sitio oficial</h3>
+        <p>Toda la información institucional de Pablo Chamatrópulos.</p>
+        <a href="https://chamatropulos.com.ar" target="_blank" rel="noopener" class="btn btn-ghost" style="width:fit-content;">chamatropulos.com.ar ↗</a>
+      </div>
+      <div class="part-card">
+        <h3>Seguí a Pablo en X</h3>
+        <p>Declaraciones y novedades en tiempo real.</p>
+        <a href="https://x.com/Chamatropulos" target="_blank" rel="noopener" class="btn btn-ghost" style="width:fit-content;">@Chamatropulos ↗</a>
+      </div>
+      <div class="part-card">
+        <h3>Instagram y Facebook</h3>
+        <p>Fotos, recorridas y novedades de la campaña.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a href="https://www.instagram.com/pablo_chamatropulos" target="_blank" rel="noopener" class="btn btn-ghost" style="width:fit-content;">Instagram ↗</a>
+          <a href="https://www.facebook.com/chamatropulos" target="_blank" rel="noopener" class="btn btn-ghost" style="width:fit-content;">Facebook ↗</a>
+        </div>
+      </div>
+      <div class="part-card">
+        <h3>WhatsApp</h3>
+        <p>Escribile directamente al espacio para sumarte o dejar tu propuesta.</p>
+        <a href="https://wa.me/5492944248700" target="_blank" rel="noopener" class="btn btn-ghost" style="width:fit-content;">2944 24-8700 ↗</a>
+      </div>
+    </div>
+
+    <div class="contact-form" data-reveal>
+      <h3>Dejá tu propuesta o sumate al espacio</h3>
+      <p>Formulario de contacto de referencia — falta conectarlo a un backend o servicio de envío de correo antes de publicarlo.</p>
+      <form onsubmit="event.preventDefault(); alert('Formulario de referencia: falta conectar a un servicio de envío.');">
+        <div class="form-row two">
+          <div><label for="nombre">Nombre</label><input id="nombre" type="text" placeholder="Tu nombre"></div>
+          <div><label for="barrio">Barrio</label><input id="barrio" type="text" placeholder="Tu barrio"></div>
+        </div>
+        <div class="form-row two">
+          <div><label for="email">Email</label><input id="email" type="email" placeholder="tu@email.com"></div>
+          <div><label for="motivo">Quiero</label>
+            <select id="motivo">
+              <option>Sumarme como voluntario/a</option>
+              <option>Dejar una propuesta</option>
+              <option>Recibir novedades</option>
+              <option>Otra consulta</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div><label for="mensaje">Mensaje</label><textarea id="mensaje" placeholder="Contanos tu idea o consulta"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p class="form-note">Placeholder funcional — no envía datos a ningún servidor todavía.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Pablo Chamatrópulos</div>
+        <p style="font-size:0.88rem;max-width:36ch;color:rgba(238,232,220,0.65);">Presidente de Podemos Bariloche. Primer candidato a Convencional Constituyente para la reforma de la Carta Orgánica Municipal — elección del 1° de noviembre de 2026.</p>
+      </div>
+      <div>
+        <h4>Recorrido</h4>
+        <ul>
+          <li><a href="#pablo">Quién es Pablo</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#carta-organica">Carta Orgánica</a></li>
+          <li><a href="#propuestas">Propuestas</a></li>
+          <li><a href="#voz">La palabra de Pablo</a></li>
+          <li><a href="#actualidad">Actualidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="https://chamatropulos.com.ar" target="_blank" rel="noopener">Sitio oficial ↗</a></li>
+          <li><a href="https://x.com/Chamatropulos" target="_blank" rel="noopener">X — @Chamatropulos ↗</a></li>
+          <li><a href="https://www.instagram.com/pablo_chamatropulos" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a href="https://www.facebook.com/chamatropulos" target="_blank" rel="noopener">Facebook ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pablo Chamatrópulos · Podemos Bariloche. Todos los contenidos citan su fuente original.</span>
+      <span>San Carlos de Bariloche, Río Negro, Argentina</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  }
+</script>
+</body>
+</html>
