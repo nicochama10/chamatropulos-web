@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0072CE">
+<link rel="canonical" href="https://chamatropulos.com.ar/resultados">
+<title>Participación y resultados · Pablo Chamatrópulos</title>
+<meta name="description" content="Seguimiento provisorio del escrutinio de Convencionales Constituyentes de Bariloche, según certificados de fiscales de Podemos Bariloche.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Tokens del sitio principal */
+:root{--blue:#0072CE;--blue-deep:#00518F;--sky:#71C5E8;--navy:#0B2B48;--navy-deep:#071E33;--ink:#10253A;--muted:#3C4F63;--paper:#F5F9FD;--mist:#E3F0FA;--line:rgba(11,43,72,.14);
+--bg:#F5F9FD;--card:#fff;--bar:#9db3c9;--bad:#c2362b;--good:#12805c;--serif:'Fraunces',Georgia,serif;--sans:'Work Sans',system-ui,sans-serif;--gutter:20px;--nav-h:60px}
+@media(min-width:700px){:root{--gutter:32px;--nav-h:68px}}
+*{box-sizing:border-box}
+body{margin:0;-webkit-font-smoothing:antialiased;font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.5}
+.wrap{max-width:900px;margin:0 auto;padding:28px max(var(--gutter),env(safe-area-inset-right,0px)) 56px max(var(--gutter),env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px}
+a{color:var(--blue)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.top a.back{font-weight:600;text-decoration:none;font-size:14px}
+.badge{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:#fff4dc;color:#8a5400}
+h1{font-family:var(--serif);font-weight:650;font-size:clamp(2rem,7vw,3rem);line-height:1.05;margin:0;letter-spacing:-.02em;font-variation-settings:'opsz' 96}
+.sub{color:var(--muted);margin:4px 0 0;font-size:14px}
+.warn{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:8px;padding:12px 14px;font-size:13px;color:var(--muted)}
+.hero{background:var(--blue);color:#fff;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.hero h2{margin:0;font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:#fff;font-weight:600}
+.hero .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.k{display:flex;flex-direction:column;min-width:0}
+.k b{font-family:'IBM Plex Mono',monospace;font-size:30px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1}
+.k span{font-size:13px;color:#E8F4FC}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h2{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:right;padding:6px 8px;font-weight:600;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:9px 8px;border-top:1px solid var(--line);text-align:right;font-family:'IBM Plex Mono',monospace;font-size:13px}
+td.name{font-family:var(--sans);text-align:left;min-width:170px;font-size:14px}
+td.name small{font-family:'IBM Plex Mono',monospace;color:var(--muted);margin-right:6px}
+tr.me td{background:#e4f1fc;font-weight:600}
+td.bc{min-width:130px;width:32%}
+.track{position:relative;height:12px;background:var(--bg);border-radius:3px}
+.fill{position:absolute;left:0;top:0;bottom:0;background:var(--bar);border-radius:3px}
+.me .fill{background:var(--blue)}
+.mk{position:absolute;top:-3px;bottom:-3px;border-left:1px dashed var(--muted)}
+.mk.five{border-left:2px solid var(--bad)}
+.legend{font-size:11px;color:var(--muted);margin-top:8px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:10px}
+.seg button{font:inherit;font-size:12px;border:0;background:#fff;color:var(--muted);padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.pill{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:#fdeae8;color:var(--bad)}
+.state{font-size:12px;color:var(--muted)}
+.empty{text-align:center;color:var(--muted);padding:28px 8px}
+footer{font-size:12px;color:var(--muted)}
+
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--navy);padding:10px 16px;border-radius:8px;z-index:100;font-weight:600}.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+.container{width:100%;max-width:1160px;margin-inline:auto;padding-inline:var(--gutter)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 18px;border-radius:999px;font:600 .88rem/1 var(--sans);text-decoration:none;background:var(--blue);color:#fff}.btn:hover{background:var(--blue-deep)}
+.nav{position:sticky;top:0;z-index:60;background:rgba(245,249,253,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:12px;height:var(--nav-h)}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.12rem;letter-spacing:-.01em;text-decoration:none;color:var(--navy);margin-right:auto}
+.nav-links{display:none}
+.menu-btn{width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:transparent;color:var(--navy);display:grid;place-items:center;cursor:pointer}.menu-btn svg{width:20px;height:20px}
+.menu{background:#fff;border-top:1px solid var(--line);padding:6px var(--gutter) 18px}.menu a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:1.05rem;color:var(--navy)}.menu a:last-child{border-bottom:0}
+@media(min-width:900px){.nav-links{display:flex;gap:26px;margin-right:12px}.nav-links a{text-decoration:none;font-size:.92rem;color:var(--muted);padding:6px 0;border-bottom:2px solid transparent}.nav-links a:hover{color:var(--navy);border-bottom-color:var(--sky)}.menu-btn{display:none}.menu{display:none!important}}
+footer{background:var(--navy-deep);color:#B7CBDC;padding-block:36px 26px}
+.foot-name{font-family:var(--serif);font-weight:600;font-size:1.25rem;color:#fff}
+footer p{font-size:.9rem;margin:6px 0 0}.foot-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px}.foot-links a{color:#D4E3F0;text-decoration:none;font-size:.92rem}.foot-links a:hover{color:#fff;text-decoration:underline}
+footer .legal{margin-top:22px;font-size:.8rem;color:#8FB0CC}
+@media(max-width:520px){#tcol td:nth-child(4),#tcol th:nth-child(4),#tcol td:nth-child(6),#tcol th:nth-child(6),#tfr td:nth-child(4),#tfr th:nth-child(4),#tmesa td:nth-child(5),#tmesa th:nth-child(5){display:none}td.name{min-width:0}td,th{padding-inline:5px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<header class="nav">
+  <div class="container nav-in">
+    <a class="brand" href="/">Pablo Chamatrópulos</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="/#pablo">Pablo</a><a href="/#carta-organica">Carta Orgánica</a><a href="/#propuestas">Propuestas</a><a href="/#bariloche">Bariloche</a><a href="/#palabra">La palabra de Pablo</a>
+    </nav>
+    <a class="btn nav-cta" href="/#participa">Sumate</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="menu" id="menu" aria-label="Menú" hidden>
+    <a href="/#pablo">Pablo</a><a href="/#carta-organica">Carta Orgánica</a><a href="/#propuestas">Propuestas</a><a href="/#bariloche">Bariloche</a><a href="/#palabra">La palabra de Pablo</a>
+  </nav>
+</header>
+<main id="contenido"><div class="wrap">
+  <div>
+    <h1>Participación y resultados</h1>
+    <p class="sub">Elección de Convencionales Constituyentes · Bariloche · domingo 1 de noviembre de 2026</p>
+  </div>
+  <div class="warn">Estos números salen de los relevos y certificados que reúnen los fiscales de Podemos Bariloche en algunos colegios. <b>No son resultados oficiales ni representan a toda la ciudad.</b> Los oficiales los publica la Junta Electoral Municipal.</div>
+  <div class="hero" id="hero"></div>
+  <div class="card"><h2>Participación por colegio</h2><div class="scroll"><table id="tcol"></table></div><p class="legend" id="nota"></p></div>
+  <div class="card"><h2>Evolución durante el día</h2><div class="scroll"><table id="tfr"></table></div><p class="legend">Cada franja usa los relevos de esa hora. Solo se puede comparar entre franjas cuando son las mismas mesas.</p></div>
+  <div class="card" id="cres" hidden>
+    <h2>Resultados por lista</h2>
+    <div class="seg" role="group" aria-label="Base del porcentaje"><button id="bpos" aria-pressed="true">% sobre positivos</button><button id="bval" aria-pressed="false">% con blancos</button></div>
+    <div class="scroll"><table id="tres"></table></div>
+    <div class="legend"><b style="color:var(--bad)">|</b> piso del 5% · | 10% · Bancas: proyección D'Hondt de 15 cargos con las mesas computadas.</div>
+  </div>
+  <div class="card" id="cwait"><h2>Resultados por lista</h2><p class="legend" style="margin:0">Se publican cuando cierren las mesas (18 hs) y los fiscales tengan los certificados de escrutinio.</p></div>
+  <details class="card"><summary style="cursor:pointer;font-weight:600">Ver mesa por mesa</summary><div class="scroll" style="margin-top:10px"><table id="tmesa"></table></div></details>
+  <p id="foot" style="font-size:12px;color:var(--muted)"></p>
+</div></main>
+<footer><div class="container">
+  <div class="foot-name">Pablo Chamatrópulos</div>
+  <p>Presidente de Podemos Bariloche. San Carlos de Bariloche, Río Negro, Argentina.</p>
+  <div class="foot-links"><a href="/">Volver al inicio</a><a href="https://www.instagram.com/pablo_chamatropulos" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/chamatropulos" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/Chamatropulos" target="_blank" rel="noopener">X</a><a href="https://wa.me/5492944248700" target="_blank" rel="noopener">WhatsApp</a></div>
+  <p class="legal">© 2026 Pablo Chamatrópulos · Podemos Bariloche.</p>
+</div></footer>
+
+
+<script>
+(function(){var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');function set(o){b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');m.hidden=!o}b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true')});m.addEventListener('click',function(e){if(e.target.tagName==='A')set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)})})();
+
+/* ===== DATOS (se actualizan cada 2 horas) =====
+   relevos: [colegio, mesa, hora, votantes hasta esa hora, electores de la mesa (0 = no informado)]
+   mesas:   certificados de escrutinio: {mesa, votantes, blanco, nulos, recurridos, impugnados, listas:{357:n,...}} */
+var DATA={"actualizado": "10:44", "relevos": [["Esc 321", 37, "09:30", 7, 0], ["Esc 321", 38, "09:30", 5, 0], ["Esc 321", 39, "09:30", 7, 0], ["Esc 321", 40, "09:30", 8, 0], ["Esc 321", 41, "09:30", 9, 0], ["Esc 321", 42, "09:30", 3, 0], ["Esc 321", 43, "09:30", 6, 0], ["Colegio 123", 47, "09:53", 5, 347], ["Colegio 123", 46, "09:53", 5, 346], ["Colegio 123", 50, "09:53", 14, 347], ["Colegio 123", 48, "09:53", 5, 0], ["Colegio 123", 45, "09:55", 6, 347], ["Melipal Esc 298", 84, "10:13", 17, 353], ["Melipal Esc 298", 82, "10:13", 11, 353], ["Melipal Esc 298", 83, "10:13", 16, 350], ["Melipal Esc 298", 81, "10:19", 17, 353], ["Melipal Esc 298", 80, "10:19", 15, 350], ["Melipal Esc 298", 86, "10:19", 10, 353], ["Melipal Esc 298", 85, "10:19", 15, 353], ["Melipal Esc 298", 75, "10:19", 15, 354], ["Melipal Esc 298", 76, "10:19", 14, 350], ["Melipal Esc 298", 77, "10:19", 10, 354], ["Melipal Esc 298", 78, "10:19", 14, 354], ["Melipal Esc 298", 79, "10:19", 12, 353], ["Esc 367", 161, "10:37", 20, 0], ["Esc 367", 162, "10:37", 40, 0], ["Esc 367", 163, "10:37", 20, 0], ["Esc 367", 164, "10:37", 32, 0], ["Esc 367", 165, "10:37", 29, 0], ["Esc 367", 166, "10:37", 22, 0], ["Esc 367", 167, "10:37", 24, 0], ["Esc 367", 168, "10:37", 24, 0], ["Esc 367", 169, "10:37", 22, 0], ["Esc 367", 170, "10:37", 28, 0], ["Esc 367", 171, "10:37", 30, 0], ["Esc 367", 172, "10:37", 25, 0], ["Esc 367", 173, "10:37", 33, 0], ["Cem2", 65, "10:37", 13, 341], ["Cem2", 66, "10:37", 20, 342], ["Cem2", 67, "10:37", 26, 341], ["Cem2", 68, "10:37", 22, 341], ["Cem2", 69, "10:37", 19, 341], ["Cem2", 70, "10:37", 22, 341], ["Cem2", 72, "10:37", 25, 340], ["Cem2", 73, "10:37", 22, 340], ["Cem2", 74, "10:37", 22, 340]], "mesas": []};
+var PADRON_ESTIMADO=350;
+var LISTS=[[383,"Seamos Futuro"],[662,"Acuerdo Cívico por Bariloche"],[658,"Haciendo Bariloche"],[384,"Participación Vecinal - PAVE"],[216,"Primero Río Negro"],[661,"Frente la Izquierda de los Trabajadores"],[660,"Libertad Avanza en Bariloche"],[357,"Podemos Bariloche"],[657,"Fuerza Bariloche"],[346,"Movimiento Vecinal por Bariloche"],[663,"Frente de Izquierda por el Socialismo"],[388,"N.I.C. – Nuestra Identidad Ciudadana"],[659,"+ Bariloche Sumar Sur"]];
+var ME=357,SEATS=15,base="pos";
+var $=function(i){return document.getElementById(i)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var fmt=function(n){return Math.round(n).toLocaleString("es-AR")};
+var pc=function(n,d){d=d==null?1:d;return isFinite(n)?n.toLocaleString("es-AR",{minimumFractionDigits:d,maximumFractionDigits:d})+"%":"–"};
+
+/* participación */
+function agg(a){var o={v:0,e:0,est:0,n:a.length};a.forEach(function(r){var e=r[4]||PADRON_ESTIMADO;if(!r[4])o.est++;o.v+=r[3];o.e+=e});o.p=o.e?o.v/o.e*100:NaN;return o}
+function renderPart(){
+  var R=DATA.relevos,latest={};
+  R.forEach(function(r){var k=r[0]+"|"+r[1],o=latest[k];if(!o||r[2]>=o[2])latest[k]=r});
+  var L=Object.keys(latest).map(function(k){return latest[k]}),S=agg(L),cols={};
+  L.forEach(function(r){(cols[r[0]]=cols[r[0]]||[]).push(r)});
+  var last=L.reduce(function(a,r){return r[2]>a?r[2]:a},"00:00");
+  $("hero").innerHTML='<h2>Participación en los colegios relevados</h2><div class="grid">'+
+    '<div class="k"><b>'+pc(S.p)+'</b><span>votó hasta las '+last+' hs</span></div>'+
+    '<div class="k"><b>'+fmt(S.v)+'</b><span>votantes sobre '+fmt(S.e)+' electores</span></div>'+
+    '<div class="k"><b>'+S.n+'</b><span>mesas en '+Object.keys(cols).length+' colegios</span></div></div>';
+  var h='<tr><th>Colegio</th><th>Mesas</th><th>Votantes</th><th>Electores</th><th>%</th><th>Último relevo</th></tr>';
+  Object.keys(cols).sort().forEach(function(c){var a=agg(cols[c]),hh=cols[c].reduce(function(x,r){return r[2]>x?r[2]:x},"00:00");
+    h+='<tr><td class="name">'+esc(c)+'</td><td>'+a.n+'</td><td>'+fmt(a.v)+'</td><td>'+fmt(a.e)+(a.est?'*':'')+'</td><td>'+pc(a.p)+'</td><td>'+hh+'</td></tr>'});
+  $("tcol").innerHTML=h;
+  $("nota").textContent="* Incluye mesas sin padrón informado, calculadas con "+PADRON_ESTIMADO+" electores por mesa (las mesas relevadas tienen entre 340 y 354).";
+  var by={};R.forEach(function(r){var k=r[2].slice(0,2);(by[k]=by[k]||[]).push(r)});
+  var f='<tr><th>Franja</th><th>Relevos</th><th>Votantes</th><th>Electores</th><th>%</th></tr>';
+  Object.keys(by).sort().forEach(function(k){var a=agg(by[k]);f+='<tr><td class="name">'+k+':00 a '+k+':59</td><td>'+a.n+'</td><td>'+fmt(a.v)+'</td><td>'+fmt(a.e)+'</td><td>'+pc(a.p)+'</td></tr>'});
+  $("tfr").innerHTML=f;
+  var m='<tr><th>Colegio</th><th>Mesa</th><th>Hora</th><th>Votantes</th><th>Electores</th><th>%</th></tr>';
+  L.slice().sort(function(a,b){return a[0]<b[0]?-1:a[0]>b[0]?1:a[1]-b[1]}).forEach(function(r){m+='<tr><td class="name">'+esc(r[0])+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td>'+(r[4]||"–")+'</td><td>'+pc(r[3]/(r[4]||PADRON_ESTIMADO)*100)+'</td></tr>'});
+  $("tmesa").innerHTML=m;
+  $("foot").textContent="Actualizado a las "+DATA.actualizado+" hs.";
+}
+
+/* resultados */
+function dhondt(votes,el){var q=[],o={};el.forEach(function(n){o[n]=0;for(var d=1;d<=SEATS;d++)q.push([n,votes[n]/d])});q.sort(function(a,b){return b[1]-a[1]});q.slice(0,SEATS).forEach(function(x){o[x[0]]++});return o}
+function renderRes(){
+  var M=DATA.mesas;if(!M.length){$("cres").hidden=true;$("cwait").hidden=false;return}
+  $("cres").hidden=false;$("cwait").hidden=true;
+  $("bpos").setAttribute("aria-pressed",base==="pos");$("bval").setAttribute("aria-pressed",base==="val");
+  var t={bl:0,nu:0,rec:0,imp:0,pos:0,l:{}};LISTS.forEach(function(l){t.l[l[0]]=0});
+  M.forEach(function(m){t.bl+=m.blanco||0;t.nu+=m.nulos||0;t.rec+=m.recurridos||0;t.imp+=m.impugnados||0;LISTS.forEach(function(l){var v=(m.listas&&m.listas[l[0]])||0;t.l[l[0]]+=v;t.pos+=v})});
+  var B=base==="pos"?t.pos:t.pos+t.bl;
+  var rows=LISTS.map(function(l){var v=t.l[l[0]];return{n:l[0],t:l[1],v:v,p:B?v/B*100:0}});
+  var el=rows.filter(function(r){return r.v>0&&r.p>=5}).map(function(r){return r.n}),seats=el.length?dhondt(t.l,el):{};
+  rows.sort(function(a,b){return b.v-a.v});var ax=Math.max(20,Math.ceil(rows[0].p/5)*5);
+  var h='<tr><th>Lista</th><th>Votos</th><th>%</th><th>Bancas</th><th></th></tr>';
+  rows.forEach(function(r){var s=seats[r.n]||0;
+    h+='<tr'+(r.n===ME?' class="me"':'')+'><td class="name"><small>'+r.n+'</small>'+r.t+'</td><td>'+fmt(r.v)+'</td><td>'+pc(r.p,2)+'</td><td>'+(s||(r.v&&r.p<5?'<span class="pill">bajo 5%</span>':'–'))+'</td><td class="bc"><div class="track"><div class="fill" style="width:'+Math.min(100,r.p/ax*100)+'%"></div><i class="mk five" style="left:'+5/ax*100+'%"></i><i class="mk" style="left:'+10/ax*100+'%"></i></div></td></tr>'});
+  h+='<tr><td class="name">Votos en blanco</td><td>'+fmt(t.bl)+'</td><td></td><td></td><td></td></tr><tr><td class="name">Nulos, recurridos e impugnados</td><td>'+fmt(t.nu+t.rec+t.imp)+'</td><td></td><td></td><td></td></tr>';
+  $("tres").innerHTML=h;
+}
+$("bpos").onclick=function(){base="pos";renderRes()};$("bval").onclick=function(){base="val";renderRes()};
+renderPart();renderRes();
+</script>
+</body>
+</html>
